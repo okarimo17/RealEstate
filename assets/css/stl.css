@@ -2,6 +2,7 @@
 
 :root {
     --primary-color:#0EC6D5;
+    --primary-color:#1DB5C9;
 }
 
 *{
@@ -519,3 +520,109 @@ a:hover{
 .find-home-section .find-item_inner:hover  .name {
     color: var(--primary-color);
 } 
+
+
+
+/* Get In Touch Section */
+
+
+.get-intouch-section {
+	background: url('../img/get-touch.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 100px 0;
+    position: relative;
+}
+
+.get-intouch-section .overlay {
+    background-color: #2B3A5E;
+    opacity: 0.89;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.get-intouch-section .touch-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.get-intouch-section .touch-text h2 {
+    color: #fff;
+    padding: 25px 0px;
+    font-weight: bold;
+}
+
+.get-intouch-section .touch-text p {
+    color: #efefef;
+    font-size: 15px;
+}
+@media screen and (min-width:780px) {
+    .get-intouch-section_inner {
+        padding: 0 75px;
+    }
+}
+
+.get-intouch-section .touch-form {
+    padding: 25px;
+}
+.get-intouch-section .touch-form_inner {
+    background: #fff;
+    padding: 30px;
+}
+
+
+.get-intouch-section .section-title h3{
+    color: #2B3A5E;
+    font-size: 28px;
+    /* font-weight: 700; */
+    line-height: 1.2em;
+    letter-spacing: -0.35px;
+    margin-bottom: 20px;
+}
+.get-intouch-section .section-title p{
+    color: #737F8C;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+.get-intouch-section .section-content {
+	margin-top: 30px;
+}
+.get-intouch-section .section-content input::placeholder,
+.get-intouch-section .section-content textarea::placeholder{
+    color: #8593a9;
+}
+.get-intouch-section .section-content input,
+.get-intouch-section .section-content textarea{
+    background: #ECF7F9!important;
+	/* font-size: 14px; */
+    width: 100%;
+    border: 0;
+    line-height: 1.7;
+    color: #8593a9;
+    border: 1px solid #eee;
+
+    padding: 0px 9px;
+    outline: none;
+}
+.get-intouch-section .section-content input{
+    height: 45px;
+}
+.get-intouch-section .section-content textarea{
+    padding: 8px;
+}
+.get-intouch-section .section-content .btn.btn-primary{
+	padding: 10px 0;
+	background-color: var(--primary-color);
+    outline: none;
+}
+/* @media screen and (max-width:780px) {
+    .get-intouch-section_inner{
+        padding: auto;
+    }
+} */
