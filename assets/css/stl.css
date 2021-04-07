@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cairo:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=El+Messiri:400,700&display=swap');
+
 
 :root {
     --primary-color:#0EC6D5;
@@ -15,6 +14,7 @@ body {
     overflow-x: hidden;
     user-select: none;
     background: #ddd;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -229,4 +229,82 @@ a:hover{
 }
 
   
-  
+/* Full Home Slider */
+.main-slider .carousel-inner .carousel-item {
+    height: 600px;
+}
+@media screen and (max-width:980px) {
+    .main-slider .carousel-inner .carousel-item {
+        /* min-height: 600px; */
+        height: auto;
+    }
+}
+.main-slider .carousel-item {
+    position: relative;
+}
+.main-slider .carousel-item .banner {
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+.main-slider .carousel-item .banner-content {
+    position: absolute;
+    background: #000000c7;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.main-slider .carousel-item .banner-content .row {
+    height: 100%;
+    align-items: center;
+}
+.main-slider .carousel-item .listing-data {
+    min-height: 200px;
+    color: #fff;
+}
+.main-slider .carousel-item .listing-type {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.main-slider .carousel-item .listing-place h3 {
+    margin: 14 0;
+    font-size: 44px;
+    max-width: 80%;
+}
+.main-slider .carousel-item .listing-addresse {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+.main-slider .carousel-item .listing-price {
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.main-slider .carousel-item .listing-price span {
+    font-weight: 500;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+
+.main-slider .carousel-item .inner_carousel {
+    height: 420px;
+}
+.main-slider .carousel-item .inner_carousel img {
+    height: 100%;
+}
+.main-slider .carousel-item .inner_carousel .owl-dots {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #00000054;
+    height: 25px;
+
+}
