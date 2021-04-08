@@ -810,6 +810,7 @@
 
 
 
+
   <div class="appartements-section section">
     <div class="appartements_inner">
 
@@ -823,28 +824,194 @@
         </div>
       </div>
       <div class="section-content">
-        <div class="container cc-container">
+        <div class="container cc-container tab-holder">
 
-          <div class="row">
-            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-                aria-controls="v-pills-home" aria-selected="true">Home</a>
-              <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-                aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-              <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-                aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+          <div class="row mx-0">
+            <div class="nav flex-column nav-pills col-lg-3" id="appartements-tab" role="tablist"
+              aria-orientation="vertical">
+
+              <a class="nav-link active" id="studio-appart-tab-content" data-toggle="pill" href="#v-pills-home"
+                role="tab" aria-controls="v-pills-home" aria-selected="true">
+                <i class="fa fa-building-o" aria-hidden="true"></i>
+                Studio Appartement
+              </a>
+
+              <a class="nav-link" id="appart-classb-tab-content" data-toggle="pill" href="#v-pills-profile" role="tab"
+                aria-controls="v-pills-profile" aria-selected="false"><i class="fa fa-building" aria-hidden="true"></i>
+                Appartement Class B
+              </a>
+
+              <a class="nav-link" id="appart-classc-tab-content" data-toggle="pill" href="#v-pills-messages" role="tab"
+                aria-controls="v-pills-messages" aria-selected="false">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                Appartement Class C
+              </a>
+
+              <a class="nav-link" id="panthouse-tab-content" data-toggle="pill" href="#v-pills-settings" role="tab"
+                aria-controls="v-pills-settings" aria-selected="false"><i class="fa fa-building-o"
+                  aria-hidden="true"></i>
+                Panthouse
+              </a>
+
+
             </div>
-            <div class="tab-content" id="v-pills-tabContent">
+
+
+
+            <div class="tab-content col-lg-9" id="v-pills-tabContent">
+
+
               <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                aria-labelledby="v-pills-home-tab">1</div>
-              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">2
+                aria-labelledby="studio-appart-tab-content">
+
+                <div class="tab-content_holder row ">
+                  <div class="tab-text col-md-6">
+                    <h3>Studio Apartment</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare suscipit
+                      consectetur.Fusce
+                      non mauris ex.</p>
+                    <p class="lead">Pellentesque eu fermentum quam, a congue purus. Vivamus a aliquet justo. Aliquam
+                      rhoncus suscipit
+                      nulla sit amet molestie. Phasellus vitae dictum ex.</p>
+                    <div class="properities">
+                      <div class="floor">
+                        <span class="label">Floor:</span>
+                        <span class="value">1st</span>
+                      </div>
+                      <div class="bedrooms">
+                        <span class="label">Bedrooms:</span>
+                        <span class="value">3</span>
+                      </div>
+                      <div class="bathroom">
+                        <span class="label">Bathroom:</span>
+                        <span class="value">1</span>
+                      </div>
+                      <div class="bathroom">
+                        <span class="label">Size</span>
+                        <span class="value">8,997 Sqft</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-image col-md-6">
+                    <img src="./assets/img/tab-image.png" alt="Tab 1 image">
+                  </div>
+                </div>
+
               </div>
-              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                3</div>
-              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                4</div>
+
+
+
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                aria-labelledby="appart-classb-tab-content">
+                <div class="tab-content_holder row ">
+                  <div class="tab-text col-md-6">
+                    <h3>Studio Apartment</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare suscipit
+                      consectetur.Fusce
+                      non mauris ex.</p>
+                    <p class="lead">Pellentesque eu fermentum quam, a congue purus. Vivamus a aliquet justo. Aliquam
+                      rhoncus suscipit
+                      nulla sit amet molestie. Phasellus vitae dictum ex.</p>
+                    <div class="properities">
+                      <div class="floor">
+                        <span class="label">Floor:</span>
+                        <span class="value">1st</span>
+                      </div>
+                      <div class="bedrooms">
+                        <span class="label">Bedrooms:</span>
+                        <span class="value">5</span>
+                      </div>
+                      <div class="bathroom">
+                        <span class="label">Bathroom:</span>
+                        <span class="value">8</span>
+                      </div>
+                      <div class="bathroom">
+                        <span class="label">Size</span>
+                        <span class="value">4,997 Sqft</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-image col-md-6">
+                    <img src="./assets/img/tab-image.png" alt="Tab 1 image">
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                aria-labelledby="appart-classc-tab-content">
+
+                <div class="tab-content_holder row ">
+                  <div class="tab-text col-md-6">
+                    <h3>Studio Apartment</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare suscipit
+                      consectetur.Fusce
+                      non mauris ex.</p>
+                    <p class="lead">Pellentesque eu fermentum quam, a congue purus. Vivamus a aliquet justo. Aliquam
+                      rhoncus suscipit
+                      nulla sit amet molestie. Phasellus vitae dictum ex.</p>
+                    <div class="properities">
+                      <div class="floor">
+                        <span class="label">Floor:</span>
+                        <span class="value">1st</span>
+                      </div>
+                      <div class="bedrooms">
+                        <span class="label">Bedrooms:</span>
+                        <span class="value">3</span>
+                      </div>
+                      <div class="bathroom">
+                        <span class="label">Bathroom:</span>
+                        <span class="value">1</span>
+                      </div>
+                      <div class="bathroom">
+                        <span class="label">Size</span>
+                        <span class="value">8,997 Sqft</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-image col-md-6">
+                    <img src="./assets/img/tab-image.png" alt="Tab 1 image">
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="panthouse-tab-content">
+
+                <div class="tab-content_holder row ">
+                  <div class="tab-text col-md-6">
+                    <h3>Studio Apartment</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare suscipit
+                      consectetur.Fusce
+                      non mauris ex.</p>
+                    <p class="lead">Pellentesque eu fermentum quam, a congue purus. Vivamus a aliquet justo. Aliquam
+                      rhoncus suscipit
+                      nulla sit amet molestie. Phasellus vitae dictum ex.</p>
+                    <div class="properities">
+                      <div class="floor">
+                        <span class="label">Floor:</span>
+                        <span class="value">1st</span>
+                      </div>
+                      <div class="bedrooms">
+                        <span class="label">Bedrooms:</span>
+                        <span class="value">4</span>
+                      </div>
+                      <div class="bathroom">
+                        <span class="label">Bathroom:</span>
+                        <span class="value">1</span>
+                      </div>
+                      <div class="bathroom">
+                        <span class="label">Size</span>
+                        <span class="value">8,997 Sqft</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-image col-md-6">
+                    <img src="./assets/img/tab-image.png" alt="Tab 1 image">
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
 
@@ -855,7 +1022,6 @@
 
     </div>
   </div>
-
 
 
 
