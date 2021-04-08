@@ -126,6 +126,11 @@
       <div id="full_slider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
 
+          <!-- <ol class="carousel-indicators">
+            <li data-target="#full_slider" data-slide-to="0" class="active"></li>
+            <li data-target="#full_slider" data-slide-to="1"></li>
+            <li data-target="#full_slider" data-slide-to="2"></li>
+          </ol> -->
 
           <div class="carousel-item active">
             <div class="banner" style="background-image: url('./assets/img/slides/slider-1.jpg');"></div>
@@ -810,7 +815,7 @@
         <div class="container cc-container">
           <div class="row">
             <div class="col-lg-6 video-holder">
-              <a href="https://www.youtube.com/" class="video-show"
+              <a href="https://www.youtube.com/" target="_blank" class="video-show"
                 style="background-image: url('./assets/img/video-back.jpg') ;">
                 <div class="overlay"></div>
                 <div class="play-image">
@@ -828,10 +833,6 @@
       </div>
     </div>
   </div>
-
-
-
-
 
 
   <div class="appartements-section section">
@@ -1056,7 +1057,7 @@
 
       <div class="container cc-container">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 footer-item ">
             <div class="logo">
               <img src="./assets/img/logo.png" alt="logo">
             </div>
@@ -1195,13 +1196,27 @@
   <script>
     $(document).ready(function () {
       initRightNav();
+
       $('.owl-carousel').owlCarousel({
         loop: true,
         // margin: 10,
         nav: false,
         items: 1
-
       })
+
+      var bootCarousel = $("#full_slider");
+      bootCarousel.append("<ol class='carousel-indicators'></ol>");
+      var indicators = $(".carousel-indicators");
+      bootCarousel.find(".carousel-inner").children(".carousel-item").each(function (index) {
+        (index === 0) ?
+          indicators.append("<li data-target='#full_slider' data-slide-to='" + index + "' class='active'></li>") :
+          indicators.append("<li data-target='#full_slider' data-slide-to='" + index + "'></li>");
+      });
+
+      setTimeout(() => {
+        $('.right-nav').addClass('animated')
+      }, 1000)
+
 
     });
   </script>
