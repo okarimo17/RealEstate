@@ -813,4 +813,71 @@ margin: 30px 0;
 /* appartements-section */
 .appartements-section {
     background-color: #fff;
+    --prim-color:  #C9A03E;
+}
+.appartements-section .tab-holder .nav-pills {
+    /* width: 220px; */
+    padding-right: 0;
+}
+.appartements-section .tab-holder .nav-pills a {
+    padding: 24px 22px;
+    border: 1px solid rgba(0,0,0,0.1);    
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    background: none !important;
+    color: #2B3A5E;
+    /* font-size: 18px; */
+    transition: .2s all ease-out;
+}
+.appartements-section .tab-holder .nav-pills a:last-child {
+    border-bottom: 3px solid rgba(0,0,0,0.1);
+}
+.appartements-section .tab-holder .nav-pills a i {
+    margin-right: 6px;
+    font-size: 22px;
+    color: var(--prim-color);
+}
+.appartements-section .tab-holder .tab-content {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.appartements-section .tab-holder .nav-pills a.active {
+    color: var(--prim-color);
+    border-bottom: 3px solid var(--prim-color);
+}
+.appartements-section .tab-content .tab-content_holder{
+    display: flex;
+}
+.appartements-section .tab-content .tab-content_holder .tab-text{
+    flex: 1;
+}
+.appartements-section .tab-content .tab-image {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.appartements-section .tab-content .tab-image img {
+    height: 330px;
+}
+.appartements-section .tab-content .tab-content_holder h3 {
+    /* font-size: 34px; */
+    /* font-weight: 700; */
+    /* line-height: 1.2em; */
+    color: #2B3A5E;
+    font-size: 24px;
+    letter-spacing: -0.35px;
+    margin-bottom: 20px;
+}
+.appartements-section .tab-content .tab-content_holder p {
+    font-size: 16px;
+}
+.appartements-section .tab-content .tab-content_holder .label  {
+    color: #2B3A5E;
+    font-weight: 500;
+    margin-right: 5px;
+}
+.appartements-section .tab-content .tab-content_holder .value  {
+    font-weight: 300;
 }
