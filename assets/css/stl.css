@@ -809,3 +809,8 @@ margin: 30px 0;
     display: block;
     position: absolute;
 }
+
+/* appartements-section */
+.appartements-section {
+    background-color: #fff;
+}
