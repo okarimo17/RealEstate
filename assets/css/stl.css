@@ -705,3 +705,107 @@ a:hover{
 } 
 
 
+
+
+/* Parallex Section */
+.parralex-section {
+    background: url('../img/parallex.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 650px;
+    position: relative;
+    color: #fff;
+    background-attachment: fixed;
+}
+.parralex-section .overlay{
+    background-color: transparent;
+    background-image: linear-gradient(180deg, rgba(43, 58, 94,0.6) 50%, rgba(255, 157, 28, 0.20) 100%);
+    /* opacity: 0.6; */
+    padding: 30px 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.parralex-section .overlay p {
+font-size: 22px;
+font-weight: 400;
+line-height: 26px;
+max-width: 60%;
+}
+.parralex-section .overlay h3 {
+font-size: 53px;
+line-height: 1.1em;
+max-width: 82%;
+margin: 30px 0;
+}
+
+.parralex-section .button {
+    display: flex;
+    margin-top: 42px;
+    height: 48px;
+    max-width: 450px;
+}
+.parralex-section input {
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    flex: 1;
+}
+.parralex-section .btn {
+    border-radius: 0;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+}
+.parralex-section .btn:hover {
+    background-color: #118594;
+}
+
+/* video-section */
+
+.video-section {
+    background: #fff;
+    padding: 0;
+    padding-bottom: 30px;
+}
+.video-section .section-text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video-section .section-text p, .video-section .section-text h3 {
+    margin-left: 0;
+    margin-right: initial;
+    max-width: 100%;
+}
+.video-section .video-show {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    border-radius: 20px;
+    border: 6px solid #efefef;
+    margin-top: -120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.video-section .video-show .overlay {
+    background-color: #3b3b3b9f;
+    height: 100%;
+    width: 100%;
+    transition: .2s all ease-in-out;
+}
+.video-section .video-show:hover .overlay{
+    
+    background-color: #2222229f;
+}
+.video-section .video-show .play-image{
+    display: block;
+    position: absolute;
+}
