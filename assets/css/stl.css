@@ -53,6 +53,7 @@ a:hover {
     font-weight: 300;
 }
 
+
 @media screen and (min-width:1200px ) {
     .cc-container {
         padding: 0 60px;
@@ -72,6 +73,19 @@ a:hover {
     .cc-container {
         max-width: 1420px;
     }
+}
+
+@media screen and (max-width:600px) {
+    .section .section-text p,
+    .section .section-text h3 {
+        max-width: 80%!important;
+    }
+    .section .section-text h3 {
+        font-size: 28px;
+    }
+
+    
+
 }
     
 
@@ -310,12 +324,7 @@ a:hover{
         max-height: 250px;
     }
 }
-@media screen and (max-height:600px) {
 
-    /* .main-slider .carousel-inner .inner_carousel {
-        max-height: 250px;
-    } */
-}
 
 .main-slider .carousel-item {
     position: relative;
