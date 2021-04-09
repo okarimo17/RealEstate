@@ -174,12 +174,17 @@ a:hover{
     width: 100%;
     z-index: 200;
     transform: translateX(100%);
+    overflow: hidden;
 }
 .right-nav.animated{
     transition: .5s all;
 }
-.right-nav .logo {
+.right-nav .logo a {
+    display: block;
+}
+.right-nav .logo img{
     height: 55px;
+    max-width:75% ;
 }
 
 .right-nav.show {
@@ -296,14 +301,22 @@ a:hover{
 }
 
 .main-slider .carousel-inner .carousel-item {
-    height: 600px;
+    /* height: 600px; */
+    min-height: 600px;
 }
 @media screen and (max-width:980px) {
-    .main-slider .carousel-inner .carousel-item {
-        /* min-height: 600px; */
-        height: auto;
+
+    .main-slider .carousel-inner .inner_carousel {
+        max-height: 250px;
     }
 }
+@media screen and (max-height:600px) {
+
+    /* .main-slider .carousel-inner .inner_carousel {
+        max-height: 250px;
+    } */
+}
+
 .main-slider .carousel-item {
     position: relative;
 }
@@ -761,6 +774,10 @@ margin: 30px 0;
     height: 48px;
     max-width: 450px;
 }
+
+
+
+
 .parralex-section input {
     padding: 8px 10px;
     border: none;
@@ -776,6 +793,45 @@ margin: 30px 0;
 .parralex-section .btn:hover {
     background-color: #118594;
 }
+
+@media screen and (max-width:400px) {
+    .parralex-section .overlay p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        max-width: 60%;
+        }
+        .parralex-section .overlay h3 {
+        font-size: 32px;
+        line-height: 1.1em;
+        max-width: 90%;
+        margin: 30px 0;
+        }
+        
+        .parralex-section .button {
+            /* height: 35px!important; */
+            width: auto!important;
+            /* overflow: hidden; */
+            /* display: none; */
+            display: block;
+        } 
+        .parralex-section input {
+            display: block!important;
+        } 
+        .parralex-section .btn {
+            /* display: block!important; */
+            display: block;
+            margin: 20px auto;
+            width: 60%;
+        } 
+        .video-section .video-show {
+            margin-top: 0!important;
+        }
+        .parralex-section .overlay {
+            padding: 150px 0;
+        }
+}
+
 
 /* video-section */
 
