@@ -959,6 +959,16 @@ margin: 30px 0;
     font-weight: 300;
 }
 
+@media screen and (max-width:460px) {
+    .appartements-section .tab-content .tab-image img {
+        height: 240px;
+    }
+}
+@media screen and (max-width:260px) {
+    .appartements-section .tab-content .tab-image img {
+        height: 160px;
+    }
+}
 /* footer */
 
 .footer-section {
