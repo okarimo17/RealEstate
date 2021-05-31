@@ -1254,3 +1254,35 @@ margin: 30px 0;
     background-image: var(--backg);
     background-size: contain;
 }
+
+.about-page  .gallery-item  a{
+    position: relative;
+}
+
+.about-page  .gallery-item a::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 0%);
+    content: "";
+    transition:  .15s background ;
+}
+
+.about-page  .gallery-item a:hover::after{
+    background: rgb(0 0 0 / 25%);
+}
+.about-page  .gallery-item.others a::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 60%);
+    content: "+5 View More";
+    color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
