@@ -1295,6 +1295,12 @@ margin: 30px 0;
     background: linear-gradient(90deg, #F7F7F7 50%, #fff 50%);
     padding: 80px 0;
 }
+@media screen and (max-width:992px){
+    .about-pg .chose-us{
+        background:  #fff;
+    }  
+}
+
 .about-pg .chose-us h2 {
     font-weight: bold;
 }
@@ -1302,6 +1308,12 @@ margin: 30px 0;
     font-weight: 300;
     color: #808080;
 }
+
+
+.chose-us .row {
+    margin-top: 30px;
+}
+
 .about-pg .chose-us .chose-bg {
     background-image: url('../img/aboutn/chose-us.jpg');
     background-size: cover;
@@ -1311,13 +1323,20 @@ margin: 30px 0;
 .chose-us .item {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
+    margin-left: 25px;
 }
 .chose-us .item img {
-    width: 80px;
+    width: 64px;
 }
 .chose-us .item .item_text{
-    padding: 0 15px;
+    /* padding: 0 15px; */
+    padding-left: 20px;
 }
 .chose-us .item .item_text p{
     margin-bottom: 0;
+}
+.chose-us .item .item_text h3{
+    font-size: 20px;
+    font-weight: 600;
 }
