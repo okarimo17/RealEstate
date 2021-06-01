@@ -1555,3 +1555,19 @@ margin: 30px 0;
     box-shadow: 0px 15px 30px rgb(0 0 0 / 25%);
     transform: scale(1, 1);
 }
+
+.about-pg .top-header {
+    position: absolute;
+    background: transparent;
+    padding: 12px 0;
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 10%);
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: none;
+    color: #fff;
+}
+.about-pg .top-header a {
+    color: #fff!important;
+}
