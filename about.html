@@ -173,7 +173,149 @@
   </div>
 
 
+  <div class="feature-section section">
+    <div class="feature-section_inner">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="left-content col-md-4">
+            <h2>Featured Properties</h2>
+            <p>Browse our latest hot offers.</p>
+            <a href="#">
+              Browse all
+            </a>
+          </div>
+          <div class="right-content col-md-8">
+            <div class="owl-carousel features-carousel">
+              <div class="item">              
+                <div class="feature-item">
+                  <a href="#">
+                    <div class="background" style="background-image: url('./assets/img/aboutn/featur/1.jpg');"></div>
+                    <div class="gred-bg"></div>
+                    <div class="item_content">
+                      <div>Awesome Interior Apartment</div>
+                      <h5>$1,240,000 </h5>
+                      <p class="feature-info">4 BD<span>|</span>2 BA<span>|</span>2600 SF</p>
+                    </div>
+                    <h6 class="view-details">
+                      view details
+                    </h6>
+                  </a>
+                </div>
+              </div>
 
+              <div class="item">              
+                <div class="feature-item">
+                  <a href="#">
+                    <div class="background" style="background-image: url('./assets/img/aboutn/featur/2.jpg');"></div>
+                    <div class="gred-bg"></div>
+                    <div class="item_content">
+                      <div>Colorful Little Apartment</div>
+                      <h5>$2,675 /mo</h5>
+                      <p class="feature-info">4 BD<span>|</span>2 BA<span>|</span>2600 SF</p>
+                    </div>
+                    <h6 class="view-details">
+                      view details
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="item">              
+                <div class="feature-item">
+                  <a href="#">
+                    <div class="background" style="background-image: url('./assets/img/aboutn/featur/3.jpg');"></div>
+                    <div class="gred-bg"></div>
+                    <div class="item_content">
+                      <div>Awesome Interior Apartment</div>
+                      <h5>$1,240,000 </h5>
+                      <p class="feature-info">4 BD<span>|</span>2 BA<span>|</span>2600 SF</p>
+                    </div>
+                    <h6 class="view-details">
+                      view details
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="item">              
+                <div class="feature-item">
+                  <a href="#">
+                    <div class="background" style="background-image: url('./assets/img/aboutn/featur/4.jpg');"></div>
+                    <div class="gred-bg"></div>
+                    <div class="item_content">
+                      <div>Colorful Little Apartment</div>
+                      <h5>$2,675 /mo</h5>
+                      <p class="feature-info">4 BD<span>|</span>2 BA<span>|</span>2600 SF</p>
+                    </div>
+                    <h6 class="view-details">
+                      view details
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="item">              
+                <div class="feature-item">
+                  <a href="#">
+                    <div class="background" style="background-image: url('./assets/img/aboutn/featur/5.jpg');"></div>
+                    <div class="gred-bg"></div>
+                    <div class="item_content">
+                      <div>Awesome Interior Apartment</div>
+                      <h5>$1,240,000 </h5>
+                      <p class="feature-info">4 BD<span>|</span>2 BA<span>|</span>2600 SF</p>
+                    </div>
+                    <h6 class="view-details">
+                      view details
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="item">              
+                <div class="feature-item">
+                  <a href="#">
+                    <div class="background" style="background-image: url('./assets/img/aboutn/featur/6.jpg');"></div>
+                    <div class="gred-bg"></div>
+                    <div class="item_content">
+                      <div>Colorful Little Apartment</div>
+                      <h5>$2,675 /mo</h5>
+                      <p class="feature-info">4 BD<span>|</span>2 BA<span>|</span>2600 SF</p>
+                    </div>
+                    <h6 class="view-details">
+                      view details
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+              <div class="item">              
+                <div class="feature-item">
+                  <a href="#">
+                    <div class="background" style="background-image: url('./assets/img/aboutn/featur/7.jpg');"></div>
+                    <div class="gred-bg"></div>
+                    <div class="item_content">
+                      <div>Awesome Interior Apartment</div>
+                      <h5>$1,240,000 </h5>
+                      <p class="feature-info">4 BD<span>|</span>2 BA<span>|</span>2600 SF</p>
+                    </div>
+                    <h6 class="view-details">
+                      view details
+                    </h6>
+                  </a>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -323,6 +465,32 @@
 
     $(document).ready(function () {
       initRightNav();
+
+      $('.features-carousel').owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: true,
+        items: 3,
+        navText : [
+          `<i >
+            <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828" viewBox="0 0 32.414 20.828">
+              <g id="Group_30" data-name="Group 30" transform="translate(-1845.086 -1586.086)">
+                  <line id="Line_2" data-name="Line 2" x1="30" transform="translate(1846.5 1596.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"></line>
+                  <line id="Line_3" data-name="Line 3" x1="9" y2="9" transform="translate(1846.5 1587.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"></line>
+                  <line id="Line_4" data-name="Line 4" x1="9" y1="9" transform="translate(1846.5 1596.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"></line>
+              </g>
+            </svg>
+          </i>`,
+          `<i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828" viewBox="0 0 32.414 20.828">
+              <g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-1847.5 -1589.086)">
+                  <line id="Line_2" data-name="Line 2" x2="30" transform="translate(1848.5 1599.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"></line>
+                  <line id="Line_3" data-name="Line 3" x2="9" y2="9" transform="translate(1869.5 1590.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"></line>
+                  <line id="Line_4" data-name="Line 4" y1="9" x2="9" transform="translate(1869.5 1599.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"></line>
+              </g>
+            </svg>  
+          </i>`]
+      })
 
       setTimeout(() => {
         $('.right-nav').addClass('animated')
