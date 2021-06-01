@@ -1508,3 +1508,15 @@ margin: 30px 0;
         opacity: 1;
     }
 }
+
+
+/* Slider */
+.about-pg .main-slider .carousel-inner .carousel-item {
+    min-height: auto;
+}
+.about-pg .main-slider .carousel-item .banner{
+    height: 520px;
+}
+.about-pg .main-slider .carousel-item .banner-content .row {
+    height: auto;
+}
