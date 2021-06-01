@@ -1109,7 +1109,7 @@ margin: 30px 0;
 
 
 
-/*  about page */
+/*  My about about page */
 .about-video-section  {
     padding: 0;
     background-size: cover;
@@ -1285,4 +1285,39 @@ margin: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+/* About Page New One */
+.about-pg .chose-us{
+    background: linear-gradient(90deg, #F7F7F7 50%, #fff 50%);
+    padding: 80px 0;
+}
+.about-pg .chose-us h2 {
+    font-weight: bold;
+}
+.about-pg .chose-us p {
+    font-weight: 300;
+    color: #808080;
+}
+.about-pg .chose-us .chose-bg {
+    background-image: url('../img/aboutn/chose-us.jpg');
+    background-size: cover;
+    height: 540px;
+}
+
+.chose-us .item {
+    display: flex;
+    align-items: center;
+}
+.chose-us .item img {
+    width: 80px;
+}
+.chose-us .item .item_text{
+    padding: 0 15px;
+}
+.chose-us .item .item_text p{
+    margin-bottom: 0;
 }
