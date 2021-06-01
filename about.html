@@ -177,14 +177,14 @@
     <div class="feature-section_inner">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="left-content col-md-4">
+          <div class="left-content pl-5 pb-5  pb-md-0 col-md-4">
             <h2>Featured Properties</h2>
             <p>Browse our latest hot offers.</p>
             <a href="#">
               Browse all
             </a>
           </div>
-          <div class="right-content col-md-8">
+          <div class="right-content col-md-8 px-5 px-md-0">
             <div class="owl-carousel features-carousel">
               <div class="item">              
                 <div class="feature-item">
@@ -471,6 +471,17 @@
         margin: 10,
         nav: true,
         items: 3,
+        responsive:{
+          0:{
+              items:1,
+          },
+          600:{
+              items:2,
+          },
+          800:{
+              items:3,
+          }
+        },
         navText : [
           `<i >
             <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828" viewBox="0 0 32.414 20.828">
