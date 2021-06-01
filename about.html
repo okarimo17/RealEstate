@@ -132,24 +132,60 @@
         <div class="carousel-inner">
 
 
-          <div class="carousel-item active">
-            <div class="banner" style="background-image: url('./assets/img/slides/slider-1.jpg');"></div>
+          <div class="carousel-item active" data-bg="./assets/img/aboutn/slides/ss1.jpg">
+            <div class="banner" style="background-image: url('./assets/img/aboutn/slides/s1.jpg');"></div>
             <div class="banner-content">
               <div class="container">
-                <div class="row">
-                  <div class="col-lg-7 offset-lg-1">
+                <div class="row align-items-center">
+                  <div class="col-lg-7">
                     <div class="listing-data">
                       <div class="listing-place">
                         <h3>
                           Modern Apartment in Mission District </h3>
                       </div>
-                      <div class="listing-addresse">
-                        <span>
-                          289 Foxhall Ave Alge, Kingston</span>
+                      <p class="feature-info">4 BD<span>|</span>2 BA<span>|</span>2600 SF</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item active" data-bg="./assets/img/aboutn/slides/ss2.jpg">
+            <div class="banner" style="background-image: url('./assets/img/aboutn/slides/s2.jpg');"></div>
+            <div class="banner-content">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-lg-7">
+                    <div class="listing-data">
+                      <div class="listing-place">
+                        <h3>
+                          Modern Apartment in Mission District </h3>
                       </div>
-                      <div class="listing-price">
-                        <span>$452</span> / month
+                      <p class="feature-info">4 BD<span>|</span>2 BA<span>|</span>2600 SF</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item active" data-bg="./assets/img/aboutn/slides/ss3.jpg">
+            <div class="banner" style="background-image: url('./assets/img/aboutn/slides/s3.jpg');"></div>
+            <div class="banner-content">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-lg-7">
+                    <div class="listing-data">
+                      <div class="listing-place">
+                        <h3>
+                          Modern Apartment in Mission District </h3>
                       </div>
+                      <p class="feature-info">4 BD<span>|</span>2 BA<span>|</span>2600 SF</p>
                     </div>
                   </div>
 
@@ -164,6 +200,11 @@
 
         </div>
 
+        <!-- <ol class="carousel-indicators container">
+          <li data-target="#full_slider" data-slide-to="0" class="active" style="background-image: url('./assets/img/aboutn/slides/ss1.jpg');"></li>
+          <li data-target="#full_slider" data-slide-to="0" class=""></li>
+          <li data-target="#full_slider" data-slide-to="0" class=""></li>
+        </ol> -->
         
         <a class="carousel-control-prev" href="#full_slider" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -566,6 +607,14 @@
             </svg>  
           </i>`]
       })
+
+      var bootCarousel = $("#full_slider");
+      bootCarousel.append("<ol class='carousel-indicators container'></ol>");
+      var indicators = $(".carousel-indicators");
+      bootCarousel.find(".carousel-inner").children(".carousel-item").each(function (index,item) {
+        let bg = $(item).attr('data-bg');
+        indicators.append(`<li class='${index === 0?'active':''}' style='background-image:url("${bg}")' data-target='#full_slider' data-slide-to='${index}'></li>`);
+      });
 
       setTimeout(() => {
         $('.right-nav').addClass('animated')
