@@ -1577,7 +1577,7 @@ margin: 30px 0;
     width: auto;
     flex: 1;
 }
-.about-pg  .main-slider #full_slider .carousel-btns {
+.about-pg  .main-slider #full_slider > .carousel-btns {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -1587,9 +1587,9 @@ margin: 30px 0;
     display: flex;
 }
 
-.about-pg #full_slider .carousel-control-next:hover svg{
+.about-pg #full_slider  > .carousel-btns .carousel-control-next:hover svg{
     animation: IconTransRight .3s;
 }
-.about-pg #full_slider .carousel-control-prev:hover svg{
+.about-pg #full_slider > .carousel-btns .carousel-control-prev:hover svg{
     animation: IconTransLeft .3s;
 }
