@@ -1593,3 +1593,27 @@ margin: 30px 0;
 .about-pg #full_slider > .carousel-btns .carousel-control-prev:hover svg{
     animation: IconTransLeft .3s;
 }
+
+.about-pg .card-carousel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 120;
+    background: red;
+}
+.about-pg .card-carousel .carousel-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+}
+
+.about-pg .card-carousel .carousel-item .item-price {
+    flex: 1;
+    text-align: center;
+}
+.about-pg .card-carousel .carousel-item h2 {
+    color:#fff;    
+    margin-bottom: 0;
+}
