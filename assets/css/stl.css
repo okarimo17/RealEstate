@@ -1674,19 +1674,28 @@ margin: 30px 0;
 
 .contact-pg .form-section input,
 .contact-pg .form-section textarea,
-.contact-pg .form-section select {
+.contact-pg .form-section select ,
+
+.locations-pg input,
+.locations-pg textarea,
+.locations-pg select {
     color: #333;
     padding: 21px 12px;
     outline: none;
 }
-.contact-pg .form-section select {
+.contact-pg .form-section select,
+.locations-pg select {
     padding: 0 10px;
     height: 44px;
 }
 
 .contact-pg .form-section textarea:focus,
 .contact-pg .form-section input:focus,
-.contact-pg .form-section select:focus {
+.contact-pg .form-section select:focus ,
+
+.locations-pg textarea:focus,
+.locations-pg input:focus,
+.locations-pg select:focus {
     border: 1px solid #000;
     outline: none;
     box-shadow: none;
@@ -1696,13 +1705,27 @@ margin: 30px 0;
     font-weight: bold;
     margin-bottom: 18px;
 }
-.contact-pg .form-section button {
+.contact-pg .form-section button,
+.locations-pg button {
     margin-top: 15px;
     background-color: #333333;
     border: none;
     outline: none;
     padding: 12px 15px;
 }
-.contact-pg .form-section button:hover {
+.contact-pg .form-section button:hover,
+.locations-pg button:hover {
     background-color: #666;
 }
+
+
+/* locations page*/
+.locations-pg .top-header {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.locations-pg .main-content-holder{
+    height: calc(100vh - 79px);
+    overflow: hidden;
+}
+
+
