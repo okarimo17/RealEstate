@@ -1571,3 +1571,25 @@ margin: 30px 0;
 .about-pg .top-header a {
     color: #fff!important;
 }
+
+.carousel-control-next, .carousel-control-prev{
+    position: relative;
+    width: auto;
+    flex: 1;
+}
+.about-pg .main-slider .carousel-btns {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 230px;
+    background: #fff;
+    height: 90px;
+    display: flex;
+}
+
+.about-pg .carousel-control-next:hover svg{
+    animation: IconTransRight .3s;
+}
+.about-pg .carousel-control-prev:hover svg{
+    animation: IconTransLeft .3s;
+}
