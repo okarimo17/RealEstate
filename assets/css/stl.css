@@ -1670,3 +1670,38 @@ margin: 30px 0;
 .contact-pg .form-section {
     padding-top: 200px;
 }
+
+
+.contact-pg .form-section input,
+.contact-pg .form-section textarea,
+.contact-pg .form-section select {
+    color: #333;
+    padding: 21px 12px;
+    outline: none;
+}
+.contact-pg .form-section select {
+    padding: 0 10px;
+    height: 44px;
+}
+
+.contact-pg .form-section textarea:focus,
+.contact-pg .form-section input:focus {
+    border: 1px solid #000;
+    outline: none;
+    box-shadow: none;
+}
+
+.contact-pg .form-section h3 {
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.contact-pg .form-section button {
+    margin-top: 15px;
+    background-color: #333333;
+    border: none;
+    outline: none;
+    padding: 12px 15px;
+}
+.contact-pg .form-section button:hover {
+    background-color: #666;
+}
