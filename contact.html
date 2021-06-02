@@ -225,15 +225,36 @@
               <h3>Our Locations</h3>
             </div>
             <div class="col-6 text-right">
-              <select class="custom-select" name="map">
-                <option value="sanfran">San Fransisco</option>
-                <option value="newy">New York</option>
-                <option value="la">Los Angeles</option>
+              <select id="mapSelecter" class="custom-select" name="map">
+                <option value="sanfran" >San Fransisco</option>
+                <option value="newy" >New York</option>
+                <option value="la" >Los Angeles</option>
               </select>
             </div>
           </div>
-          <div class="map-holder">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d59517.205968846356!2d3.116076458937664!3d36.75900840614693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sdz!4v1622674615454!5m2!1sen!2sdz" width="100%" height="332px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+          <ul class="nav nav-tabs d-none" id="mapstabsNav" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#sanfran" role="tab" aria-controls="home" aria-selected="true">sanfran</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#newy" role="tab" aria-controls="home" aria-selected="true">newy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#la" role="tab" aria-controls="home" aria-selected="true">la</a>
+            </li>
+          </ul>
+
+          <div class="map-holder tab-content" id="mapstabs">
+            <div class="tab-pane fade show active" id="sanfran" role="tabpanel" aria-labelledby="home-tab">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d59517.205968846356!2d3.116076458937664!3d36.75900840614693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sdz!4v1622674615454!5m2!1sen!2sdz" width="100%" height="332px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="tab-pane fade" id="newy" role="tabpanel" aria-labelledby="home-tab">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d59496.878075171124!2d2.9998521398738953!3d36.7851981023705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sdz!4v1622675773742!5m2!1sen!2sdz" width="100%" height="332px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="tab-pane fade" id="la" role="tabpanel" aria-labelledby="home-tab">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d59495.030741526345!2d3.243597896824298!3d36.78757734413117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sdz!4v1622675805955!5m2!1sen!2sdz" width="100%" height="332px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
           </div>  
 
         </div>
@@ -426,6 +447,14 @@
             </svg>  
           </i>`]
       })
+
+      $('#mapSelecter').change(function () {
+        // console.log(value)  .tab('show');
+        // $('#mapstabsNav li a').eq($(this).val())
+        let value = $(this).val();
+        $(`#mapstabsNav li a[href="#${value}"]`).tab("show")
+      });
+
 
       var bootCarousel = $("#full_slider");
       bootCarousel.append("<ol class='carousel-indicators container'></ol>");
