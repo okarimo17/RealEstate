@@ -1437,7 +1437,8 @@ margin: 30px 0;
 .features-carousel {
     position: relative;
 }
-.features-carousel .owl-nav > * {
+.features-carousel .owl-nav > * ,
+.owl-places.owl-carousel .owl-nav > * {
     position: absolute;
     top: 50%;
     background: #fff!important;
@@ -1745,15 +1746,18 @@ margin: 30px 0;
     position: relative;
     cursor: pointer;
 }
-.locations-pg .place-item .place-image {
+.locations-pg .place-item .owl-places {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-
+}
+.locations-pg .place-item .place-image {
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .locations-pg .place-item .place_content {
@@ -1776,4 +1780,25 @@ margin: 30px 0;
     color: #efefef;
     border-radius: 8px;
     font-size: 14px;
+    z-index: 10;
+}
+
+.owl-places.owl-carousel .owl-nav > * {
+    border-radius: 0;
+    height: 45px;
+    width: 45px;
+    transform: translateY(-50%);
+    background: transparent!important;
+    color: #fff!important;
+    opacity: 0;
+}
+
+.owl-places.owl-carousel .owl-nav > .owl-next {
+    right: 5;
+}
+.owl-places.owl-carousel .owl-nav > .owl-prev {
+    left: 5;
+}
+.place-item_inner:hover .owl-places.owl-carousel .owl-nav > * {
+    opacity: 1;
 }

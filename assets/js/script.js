@@ -22,7 +22,10 @@ const locations = [
     {
         name:"Awesome Interior Apartment",
         price:"1,240,000",
-        image:"./assets/img/places/place1.jpg",
+        images:[
+            "./assets/img/places/place1.jpg",
+            "./assets/img/slides/slider-1.jpg",
+        ],
         position:{
             lat: 36.772675, lng: 3.227460
         }
@@ -30,7 +33,10 @@ const locations = [
     {
         name:"Place 2",
         price:"940,000",
-        image:"./assets/img/places/place1.jpg",
+        images:[
+            "./assets/img/slides/slider-2.jpg",
+            "./assets/img/slides/slider-3.jpg",
+        ],
         position:{
             lat: 36.765959,  lng: 3.217376
         }
@@ -38,7 +44,10 @@ const locations = [
     {
         name:"Place 2",
         price:"940,000",
-        image:"./assets/img/places/place1.jpg",
+        images:[
+            "./assets/img/slides/slider-3.jpg",
+            "./assets/img/slides/slider-1.jpg",
+        ],
         position:{
             lat: 36.758267 , lng: 3.208787
         }
@@ -59,8 +68,15 @@ function locationTemplate(item,map){
         console.log(position)
         map.setCenter(position);
     }
+    let items = item.images.map(image => `
+    <div class="item">
+        <div class="place-image" style="background-image: url('${image}');"></div>
+    </div>`).join("");
     placeitem_inner.innerHTML = (`
-        <div class="place-image" style="background: url('${item.image}');"></div>
+        <div class="place-image" ></div>
+        <div class="owl-places owl-carousel">
+            ${items}
+        </div>
         <div class="place_content">
             <div>${item.name}</div>
             <h5>$${item.price}</h5>
@@ -74,25 +90,15 @@ function locationTemplate(item,map){
 function fillLocationRow(map){
     locations.map(location => {
         $('.places-holder').append(locationTemplate(location,map));
-        
-        // const marker = new google.maps.Marker({
-        //     position: location.position,
-        //     map: map,
-        // });
         let infoWindow = new google.maps.InfoWindow();
         infoWindow.setPosition(location.position);
         infoWindow.setContent(`$ ${location.price}`);
-        infoWindow.open(map);
-        // map.setCenter(location.position);
-    
-    
+        infoWindow.open(map);   
     })
 }
 
 function initMap() {
 
-
-    // The map, centered at Uluru
     const map = new google.maps.Map(document.getElementById("mapPlace"), {
       zoom: 16,
       center: locations[0].position,
@@ -100,11 +106,16 @@ function initMap() {
 
     fillLocationRow(map)
 
-    // infoWindow = new google.maps.InfoWindow();
-    // infoWindow.setPosition(pos);
-    //   infoWindow.setContent("Location found.");
-    //   infoWindow.open(map);
-    //   map.setCenter(pos);
+    $('.owl-places.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        items: 1,
+        navText : [
+          `<i class="fa fa-chevron-left"></i>`,
+          `<i class="fa fa-chevron-right"></i>`
+        ],
+      })
 
 
 }
