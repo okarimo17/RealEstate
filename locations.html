@@ -128,7 +128,9 @@
     <div class="main-content-inner fluid-container">
         <div class="row h-100 mx-0">
           <div class="col-6 px-0">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d59517.205968846356!2d3.116076458937664!3d36.75900840614693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sdz!4v1622674615454!5m2!1sen!2sdz" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div id="mapPlace" style="width:100%;height:100%;">
+              f
+            </div>
           </div>
           <div class="col-6 right-part bg-white py-2 px-0">
             <div class="form-row mx-0">
@@ -154,61 +156,8 @@
             </div>
             <div class="row places-holder mx-0">
 
-              <div class="col-md-6 place-item">
-                <div class="place-item_inner">
-                  <div class="place-image"></div>
-                  <div class="place_content">
-                    <div>Awesome Interior Apartment</div>
-                    <h5>$1,240,000 </h5>
-                  </div>
-                  <div class="featured-tag">FEATURED</div>
-                </div>
-              </div>
+             
 
-              <div class="col-md-6 place-item">
-                <div class="place-item_inner">
-                  <div class="place-image"></div>
-                  <div class="place_content">
-                    <div>Awesome Interior Apartment</div>
-                    <h5>$1,240,000 </h5>
-                  </div>
-                  <div class="featured-tag">FEATURED</div>
-                </div>
-              </div>
-
-
-              <div class="col-md-6 place-item">
-                <div class="place-item_inner">
-                  <div class="place-image"></div>
-                  <div class="place_content">
-                    <div>Awesome Interior Apartment</div>
-                    <h5>$1,240,000 </h5>
-                  </div>
-                  <div class="featured-tag">FEATURED</div>
-                </div>
-              </div>
-
-              <div class="col-md-6 place-item">
-                <div class="place-item_inner">
-                  <div class="place-image"></div>
-                  <div class="place_content">
-                    <div>Awesome Interior Apartment</div>
-                    <h5>$1,240,000 </h5>
-                  </div>
-                  <div class="featured-tag">FEATURED</div>
-                </div>
-              </div>
-
-              <div class="col-md-6 place-item">
-                <div class="place-item_inner">
-                  <div class="place-image"></div>
-                  <div class="place_content">
-                    <div>Awesome Interior Apartment</div>
-                    <h5>$1,240,000 </h5>
-                  </div>
-                  <div class="featured-tag">FEATURED</div>
-                </div>
-              </div>
 
             </div>
           </div>
@@ -223,13 +172,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="./assets/js/owl.carousel.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script async
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBDzMX-PFH1GTaON1Q_TB2pO8VbmXTauik&callback=initMap">
+  </script>
   <script src="./assets/js/script.js"></script>
 
   <script>
-
+    
     $(document).ready(function () {
-      initRightNav();
 
+      initRightNav();
       $('.features-carousel').owlCarousel({
         loop: false,
         margin: 10,
