@@ -1573,7 +1573,7 @@ margin: 30px 0;
     color: #fff!important;
 }
 
- #full_slider .carousel-control-next, .carousel-control-prev{
+.about-pg #full_slider .carousel-control-next, .about-pg #full_slider .carousel-control-prev{
     position: relative;
     width: auto;
     flex: 1;
