@@ -1595,28 +1595,60 @@ margin: 30px 0;
     animation: IconTransLeft .3s;
 }
 
-.about-pg .card-carousel {
+.about-pg .banner-bottom {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 50%;
     height: 120;
     background: red;
-}
-.about-pg .card-carousel .carousel-item {
-    height: 100%;
     display: flex;
     align-items: center;
-     justify-content: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.about-pg .carousel-item .banner-bottom::after{
+    content: "";
+    background-color: var(--darkreader-inline-bgcolor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120;
+    transform: translateX(-100%);
+    z-index: 1;
+}
+.about-pg .carousel-item.active .banner-bottom::after {
+    animation: transformBottom 6s linear;
+}
+@keyframes transformBottom {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 
-.about-pg .card-carousel .carousel-item .item-price {
+.about-pg .banner-bottom .item-price {
     flex: 1;
-    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+    text-align: left;
+    padding-left: 80px;
+    position: relative;
+    z-index: 4;
 }
-.about-pg .card-carousel .carousel-item h2 {
+.about-pg .banner-bottom h2 {
     color:#fff;    
     margin-bottom: 0;
+}
+.about-pg .banner-bottom .show-details {
+    color:#fff;    
+    position: relative;
+    z-index: 4;
+    margin-bottom: 0;
+    padding-right: 35px;
 }
 
 
