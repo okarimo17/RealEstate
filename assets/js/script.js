@@ -92,6 +92,7 @@ function fillLocationRow(map){
         $('.places-holder').append(locationTemplate(location,map));
         let infoWindow = new google.maps.InfoWindow();
         infoWindow.setPosition(location.position);
+        // infoWindow.setContent(`$ ${location.price}`);
         infoWindow.setContent(`$ ${location.price}`);
         infoWindow.open(map);   
     })
