@@ -28,7 +28,8 @@ const locations = [
         ],
         position:{
             lat: 36.772675, lng: 3.227460
-        }
+        },
+        diag:'./assets/map_dial.jpg'
     },
     {
         name:"Place 2",
@@ -39,7 +40,8 @@ const locations = [
         ],
         position:{
             lat: 36.765959,  lng: 3.217376
-        }
+        },
+        diag:'./assets/map_dial.jpg'
     },
     {
         name:"Place 2",
@@ -50,7 +52,8 @@ const locations = [
         ],
         position:{
             lat: 36.758267 , lng: 3.208787
-        }
+        },
+        diag:'./assets/map_dial.jpg'
     }
 ]
 
@@ -92,8 +95,19 @@ function fillLocationRow(map){
         $('.places-holder').append(locationTemplate(location,map));
         let infoWindow = new google.maps.InfoWindow();
         infoWindow.setPosition(location.position);
-        // infoWindow.setContent(`$ ${location.price}`);
-        infoWindow.setContent(`$ ${location.price}`);
+        infoWindow.setContent(`<div class="map-dial">
+        <div class="place-small-price">$ ${location.price}</div>
+        <a href="#location_page" class="place-details">
+          <div class="place-image" 
+          style="background-image: url('${location.diag}');">
+          </div>
+          <div class="place-marker-details-info">
+            <div class="place-details-info-title">${location.name}</div>
+            <div class="place-details-info-price">$${location.price} <span></span></div>
+            <div class="place-details-info-feat">4 BD<span>|</span>2 BA<span>|</span>2600 SF</div>
+          </div>
+        </a>
+      </div>`);
         infoWindow.open(map);   
     })
 }
